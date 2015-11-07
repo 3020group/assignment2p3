@@ -8,3 +8,13 @@ C:\Users\Malcolm\Documents\hci project\assignment2p3\assignment3q3\assignmetnt3q
 C:\Users\Malcolm\Documents\hci project\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.pdb
 C:\Users\Malcolm\Documents\hci project\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.mainView.resources
 C:\Users\Malcolm\Documents\hci project\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.newContact.resources
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\bin\Debug\assignmetnt3q3.exe.config
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.exe
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.pdb
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\bin\Debug\assignmetnt3q3.exe
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\bin\Debug\assignmetnt3q3.pdb
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.csprojResolveAssemblyReference.cache
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.mainView.resources
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.newContact.resources
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.Properties.Resources.resources
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.csproj.GenerateResource.Cache
