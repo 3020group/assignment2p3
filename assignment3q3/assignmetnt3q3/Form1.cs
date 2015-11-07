@@ -38,17 +38,22 @@ namespace assignmetnt3q3
 
             foreach (var field in doc.Descendants("entry"))
             {
-                ListViewItem item = new ListViewItem(new string[]
+                if(Int32.Parse(field.Element("age").Value) <= ageBar.Value*10)
                 {
-                 field.Element("firstName").Value,
-                 field.Element("lastName").Value,
-                 field.Element("age").Value,
-                 field.Element("gender").Value,
-                 field.Element("year").Value,
-                 field.Element("phone").Value,
-                 field.Element("address").Value
-                });
-                listView2.Items.Add(item);
+                    ListViewItem item = new ListViewItem(new string[]
+                    {
+                        field.Element("firstName").Value,
+                        field.Element("lastName").Value,
+                        field.Element("age").Value,
+                        field.Element("gender").Value,
+                        field.Element("year").Value,
+                        field.Element("phone").Value,
+                        field.Element("address").Value
+                    });
+
+                    listView2.Items.Add(item);
+                }
+                
             }
         }
 
@@ -109,6 +114,11 @@ namespace assignmetnt3q3
         {
             e.Cancel = true;
             e.NewWidth = listView2.Columns[e.ColumnIndex].Width;
+        }
+
+        private void ageBar_Scroll(object sender, EventArgs e)
+        {
+            populateList();
         }
     }
 }
