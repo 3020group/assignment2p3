@@ -21,6 +21,12 @@ namespace assignmetnt3q3
         public mainView()
         {
             InitializeComponent();
+            populateList();
+        }
+
+        public void populateList()
+        {
+            listView2.Items.Clear();
 
             // Making the headers
             listView2.View = View.Details;
@@ -36,8 +42,9 @@ namespace assignmetnt3q3
 
             foreach (var field in doc.Descendants("entry"))
             {
-                ListViewItem item = new ListViewItem(new string[]
+                if(Int32.Parse(field.Element("age").Value) <= ageBar.Value*10)
                 {
+<<<<<<< HEAD
                  field.Element("firstName").Value,
                  field.Element("lastName").Value,
                  field.Element("age").Value,
@@ -52,6 +59,23 @@ namespace assignmetnt3q3
 
          //   listView2.Items[0].Selected = true;
 
+=======
+                    ListViewItem item = new ListViewItem(new string[]
+                    {
+                        field.Element("firstName").Value,
+                        field.Element("lastName").Value,
+                        field.Element("age").Value,
+                        field.Element("gender").Value,
+                        field.Element("year").Value,
+                        field.Element("phone").Value,
+                        field.Element("address").Value
+                    });
+
+                    listView2.Items.Add(item);
+                }
+                
+            }
+>>>>>>> origin/master
         }
 
 
@@ -88,7 +112,7 @@ namespace assignmetnt3q3
         //the new client button
         private void button1_Click(object sender, EventArgs e)
         {
-            newContact newForm = new newContact();
+            newContact newForm = new newContact(this);
             newForm.Show();
         }
 
@@ -166,5 +190,37 @@ namespace assignmetnt3q3
             e.NewWidth = listView2.Columns[e.ColumnIndex].Width;
         }
 
+<<<<<<< HEAD
+=======
+        private void ageBar_Scroll(object sender, EventArgs e)
+        {
+            populateList();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> origin/master
     }
 }

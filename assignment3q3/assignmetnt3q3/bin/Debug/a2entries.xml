@@ -2,6 +2,7 @@
 <entries>
   <entry>
     <firstName>
+<<<<<<< HEAD
 Taylor
 </firstName>
     <lastName>
@@ -90,4 +91,36 @@ M
 
 
 
+=======
+      Taylor
+    </firstName>
+    <lastName>
+      Cox
+    </lastName>
+    <age>
+    20
+  </age>
+    <gender>
+      male
+    </gender>
+    <year>
+        2015
+    </year>
+    <phone>
+      204-420-6969
+    </phone>
+    <address>
+      da hood
+    </address>
+  </entry>
+  <entry>
+    <firstName>malcolm </firstName>
+    <lastName>mergulhao</lastName>
+    <age>72</age>
+    <gender>Male </gender>
+    <year>1</year>
+    <phone>a</phone>
+    <address>a</address>
+  </entry>
+>>>>>>> origin/master
 </entries>
