@@ -43,6 +43,7 @@
             this.yearLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.createButton = new System.Windows.Forms.Button();
             this.informationGrid.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.firstNameBox.Location = new System.Drawing.Point(175, 3);
             this.firstNameBox.Multiline = true;
             this.firstNameBox.Name = "firstNameBox";
-            this.firstNameBox.Size = new System.Drawing.Size(166, 26);
+            this.firstNameBox.Size = new System.Drawing.Size(166, 23);
             this.firstNameBox.TabIndex = 1;
             // 
             // informationGrid
@@ -75,10 +76,11 @@
             this.informationGrid.Controls.Add(this.yearLabel, 0, 4);
             this.informationGrid.Controls.Add(this.phoneLabel, 0, 5);
             this.informationGrid.Controls.Add(this.label1, 0, 3);
+            this.informationGrid.Controls.Add(this.createButton, 1, 7);
             this.informationGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.informationGrid.Location = new System.Drawing.Point(0, 0);
             this.informationGrid.Name = "informationGrid";
-            this.informationGrid.RowCount = 7;
+            this.informationGrid.RowCount = 8;
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -86,17 +88,18 @@
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.informationGrid.Size = new System.Drawing.Size(344, 227);
+            this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.informationGrid.Size = new System.Drawing.Size(344, 244);
             this.informationGrid.TabIndex = 0;
             // 
             // textBox3
             // 
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(175, 195);
+            this.textBox3.Location = new System.Drawing.Point(175, 177);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 29);
+            this.textBox3.Size = new System.Drawing.Size(166, 23);
             this.textBox3.TabIndex = 14;
             // 
             // label2
@@ -105,7 +108,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(3, 192);
+            this.label2.Location = new System.Drawing.Point(3, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 20);
             this.label2.TabIndex = 13;
@@ -116,10 +119,10 @@
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(175, 163);
+            this.textBox2.Location = new System.Drawing.Point(175, 148);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 26);
+            this.textBox2.Size = new System.Drawing.Size(166, 23);
             this.textBox2.TabIndex = 12;
             // 
             // yearCombo
@@ -138,7 +141,7 @@
             "8",
             "9",
             "10"});
-            this.yearCombo.Location = new System.Drawing.Point(175, 131);
+            this.yearCombo.Location = new System.Drawing.Point(175, 119);
             this.yearCombo.Name = "yearCombo";
             this.yearCombo.Size = new System.Drawing.Size(109, 21);
             this.yearCombo.TabIndex = 10;
@@ -147,10 +150,10 @@
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(175, 67);
+            this.textBox1.Location = new System.Drawing.Point(175, 61);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 26);
+            this.textBox1.Size = new System.Drawing.Size(166, 23);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -158,10 +161,10 @@
             // 
             this.lastNameBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.lastNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameBox.Location = new System.Drawing.Point(175, 35);
+            this.lastNameBox.Location = new System.Drawing.Point(175, 32);
             this.lastNameBox.Multiline = true;
             this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(166, 26);
+            this.lastNameBox.Size = new System.Drawing.Size(166, 23);
             this.lastNameBox.TabIndex = 4;
             // 
             // firstNameLabel
@@ -171,7 +174,7 @@
             this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLabel.Location = new System.Drawing.Point(3, 0);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(166, 32);
+            this.firstNameLabel.Size = new System.Drawing.Size(166, 29);
             this.firstNameLabel.TabIndex = 2;
             this.firstNameLabel.Text = "First Name :";
             this.firstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -181,9 +184,9 @@
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameLabel.Location = new System.Drawing.Point(3, 32);
+            this.lastNameLabel.Location = new System.Drawing.Point(3, 29);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(166, 32);
+            this.lastNameLabel.Size = new System.Drawing.Size(166, 29);
             this.lastNameLabel.TabIndex = 3;
             this.lastNameLabel.Text = "Last Name :";
             this.lastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,9 +196,9 @@
             this.ageBox.AutoSize = true;
             this.ageBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ageBox.Location = new System.Drawing.Point(3, 64);
+            this.ageBox.Location = new System.Drawing.Point(3, 58);
             this.ageBox.Name = "ageBox";
-            this.ageBox.Size = new System.Drawing.Size(166, 32);
+            this.ageBox.Size = new System.Drawing.Size(166, 29);
             this.ageBox.TabIndex = 5;
             this.ageBox.Text = "Age (years) :";
             this.ageBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -208,7 +211,7 @@
             this.genderCombo.Items.AddRange(new object[] {
             "Male ",
             "Female"});
-            this.genderCombo.Location = new System.Drawing.Point(175, 99);
+            this.genderCombo.Location = new System.Drawing.Point(175, 90);
             this.genderCombo.Name = "genderCombo";
             this.genderCombo.Size = new System.Drawing.Size(109, 21);
             this.genderCombo.TabIndex = 8;
@@ -218,9 +221,9 @@
             this.yearLabel.AutoSize = true;
             this.yearLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLabel.Location = new System.Drawing.Point(3, 128);
+            this.yearLabel.Location = new System.Drawing.Point(3, 116);
             this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(166, 32);
+            this.yearLabel.Size = new System.Drawing.Size(166, 29);
             this.yearLabel.TabIndex = 9;
             this.yearLabel.Text = "University Year :";
             this.yearLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -231,9 +234,9 @@
             this.phoneLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.phoneLabel.Location = new System.Drawing.Point(3, 160);
+            this.phoneLabel.Location = new System.Drawing.Point(3, 145);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(166, 32);
+            this.phoneLabel.Size = new System.Drawing.Size(166, 29);
             this.phoneLabel.TabIndex = 11;
             this.phoneLabel.Text = "Phone Number :";
             this.phoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -243,18 +246,30 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 96);
+            this.label1.Location = new System.Drawing.Point(3, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 32);
+            this.label1.Size = new System.Drawing.Size(166, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Gender :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // createButton
+            // 
+            this.createButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.createButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.createButton.Location = new System.Drawing.Point(175, 206);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(85, 35);
+            this.createButton.TabIndex = 15;
+            this.createButton.Text = "Submit";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // newContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 227);
+            this.ClientSize = new System.Drawing.Size(344, 244);
             this.Controls.Add(this.informationGrid);
             this.Name = "newContact";
             this.Text = "Form2";
@@ -281,5 +296,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button createButton;
     }
 }

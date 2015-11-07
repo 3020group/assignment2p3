@@ -17,6 +17,12 @@ namespace assignmetnt3q3
         public mainView()
         {
             InitializeComponent();
+            populateList();
+        }
+
+        public void populateList()
+        {
+            listView2.Items.Clear();
 
             // Making the headers
             listView2.View = View.Details;
@@ -30,18 +36,20 @@ namespace assignmetnt3q3
 
             XDocument doc = XDocument.Load("a2entries.xml");
 
-            foreach (var field in doc.Descendants("entries"))
+            foreach (var field in doc.Descendants("entry"))
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
                  field.Element("firstName").Value,
                  field.Element("lastName").Value,
-              //   field.Element("instructor").Value,
-              //   field.Element("num_students").Value,
+                 field.Element("age").Value,
+                 field.Element("gender").Value,
+                 field.Element("year").Value,
+                 field.Element("phone").Value,
+                 field.Element("address").Value
                 });
                 listView2.Items.Add(item);
             }
-
         }
 
 
@@ -78,7 +86,7 @@ namespace assignmetnt3q3
         //the new client button
         private void button1_Click(object sender, EventArgs e)
         {
-            newContact newForm = new newContact();
+            newContact newForm = new newContact(this);
             newForm.Show();
         }
 
