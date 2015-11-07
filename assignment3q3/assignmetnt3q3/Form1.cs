@@ -86,8 +86,6 @@ namespace assignmetnt3q3
         {
 
         }
-<<<<<<< HEAD
-=======
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -104,6 +102,5 @@ namespace assignmetnt3q3
             e.Cancel = true;
             e.NewWidth = listView2.Columns[e.ColumnIndex].Width;
         }
->>>>>>> origin/master
     }
 }
