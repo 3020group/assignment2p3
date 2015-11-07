@@ -1,35 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <entries>
   <entry>
-    <firstName>
-      Taylor
-    </firstName>
-    <lastName>
-      Cox
-    </lastName>
-    <age>
-    20
-  </age>
-    <gender>
-      male
-    </gender>
-    <year>
-        2015
-    </year>
-    <phone>
-      204-420-6969
-    </phone>
-    <address>
-      da hood
-    </address>
-  </entry>
-  <entry>
     <firstName>malcolm </firstName>
     <lastName>mergulhao</lastName>
     <age>72</age>
     <gender>Male </gender>
     <year>1</year>
     <phone>a</phone>
+    <address>a</address>
+  </entry>
+  <entry>
+    <firstName>asd</firstName>
+    <lastName>asd</lastName>
+    <age>123</age>
+    <gender>Female</gender>
+    <year>1</year>
+    <phone>123</phone>
     <address>a</address>
   </entry>
 </entries>

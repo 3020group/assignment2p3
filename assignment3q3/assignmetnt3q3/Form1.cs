@@ -145,5 +145,48 @@ namespace assignmetnt3q3
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Remove from ListView
+
+            if (listView2.SelectedIndices.Count > 0)
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(@"a2entries.xml");
+
+                XmlNodeList nodes = doc.GetElementsByTagName("entry");
+                XmlNode toDel;
+
+                for (int i = listView2.Items.Count - 1; i >= 0; i--)
+                {
+                    if (listView2.Items[i].Selected)
+                    {
+                        toDel = nodes[i];
+                        if (toDel != null)
+                        {
+                            toDel.ParentNode.RemoveChild(toDel);
+                        }
+                        listView2.Items[i].Remove();
+                    }
+                }
+
+
+
+
+                // Find the values of listView2.Items[i] and compare to Node, delete correct Node
+
+
+
+
+                doc.Save("a2entries.xml");
+            }
+            else
+            {
+                //Null selection form must be made
+                //NullSelectionForm ns = new NullSelectionForm();
+                //ns.Show();
+            }
+        }
     }
 }
