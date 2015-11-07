@@ -38,7 +38,6 @@
             this.aboutTool = new System.Windows.Forms.ToolStripMenuItem();
             this.Contacts = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listView2 = new System.Windows.Forms.ListView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.topBar.SuspendLayout();
             this.Contacts.SuspendLayout();
@@ -159,21 +159,6 @@
             this.tabPage1.Text = "Contacts";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // listView2
-            // 
-            this.listView2.BackColor = System.Drawing.SystemColors.Window;
-            this.listView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listView2.Location = new System.Drawing.Point(4, 205);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(815, 264);
-            this.listView2.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listView2.TabIndex = 6;
-            this.listView2.TileSize = new System.Drawing.Size(1, 1);
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView2_ColumnWidthChanging);
-            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -419,6 +404,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -430,6 +416,22 @@
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // listView2
+            // 
+            this.listView2.BackColor = System.Drawing.SystemColors.Window;
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listView2.FullRowSelect = true;
+            this.listView2.Location = new System.Drawing.Point(4, 205);
+            this.listView2.Margin = new System.Windows.Forms.Padding(4);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(815, 264);
+            this.listView2.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listView2.TabIndex = 6;
+            this.listView2.TileSize = new System.Drawing.Size(1, 1);
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView2_ColumnWidthChanging);
+            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // tabPage2
             // 

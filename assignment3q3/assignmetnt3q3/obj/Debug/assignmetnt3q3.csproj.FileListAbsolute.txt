@@ -18,3 +18,5 @@ C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\
 C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.newContact.resources
 C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.Properties.Resources.resources
 C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.csproj.GenerateResource.Cache
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.EditForm.resources
+C:\Users\Taylor\Documents\GitHub\assignment2p3\assignment3q3\assignmetnt3q3\obj\Debug\assignmetnt3q3.NullSelectionForm.resources

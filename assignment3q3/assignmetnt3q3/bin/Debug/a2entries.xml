@@ -1,14 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <entries>
-
-<firstName>
+  <entry>
+    <firstName>
 Taylor
 </firstName>
-
-<lastName>
+    <lastName>
 Cox
 </lastName>
+    <age>
+20
+</age>
+    <gender>
+M
+</gender>
+    <year>
+	3
+</year>
+    <phone>
+	204-297-6969
+</phone>
+    <address>
+	3 Maple Lake
+</address>
+  </entry>
+
+
+
+
+<entry>
+    <firstName>
+Malcolm
+</firstName>
+    <lastName>
+Mergulhao
+</lastName>
+    <age>
+20
+</age>
+    <gender>
+M
+</gender>
+    <year>
+	3
+</year>
+    <phone>
+	204-123-4576
+</phone>
+    <address>
+	1 Bonnieview
+</address>
+  </entry>
+
+
+
+
+
+<entry>
+    <firstName>
+John
+</firstName>
+    <lastName>
+Coltrane
+</lastName>
+    <age>
+25
+</age>
+    <gender>
+M
+</gender>
+    <year>
+	3
+</year>
+    <phone>
+	155-200-4200
+</phone>
+    <address>
+	7 Toadstool Avenue
+</address>
+  </entry>
+
+
+
+
+
+
+
 
 
 

@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
+using System.IO;
+
+
+
 namespace assignmetnt3q3
 {
     public partial class mainView : Form
@@ -30,17 +34,23 @@ namespace assignmetnt3q3
 
             XDocument doc = XDocument.Load("a2entries.xml");
 
-            foreach (var field in doc.Descendants("entries"))
+            foreach (var field in doc.Descendants("entry"))
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
                  field.Element("firstName").Value,
                  field.Element("lastName").Value,
-              //   field.Element("instructor").Value,
-              //   field.Element("num_students").Value,
+                 field.Element("age").Value,
+                 field.Element("gender").Value,
+                 field.Element("year").Value,
+                 field.Element("phone").Value,
+                 field.Element("address").Value,
+
                 });
                 listView2.Items.Add(item);
             }
+
+         //   listView2.Items[0].Selected = true;
 
         }
 
@@ -57,12 +67,12 @@ namespace assignmetnt3q3
 
         private void deleteTool_Click(object sender, EventArgs e)
         {
-
+            button3_Click(sender, e);
         }
 
         private void editTool_Click(object sender, EventArgs e)
         {
-
+            button2_Click(sender, e);
         }
 
         private void aboutTool_Click(object sender, EventArgs e)
@@ -84,7 +94,60 @@ namespace assignmetnt3q3
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+            if (listView2.SelectedIndices.Count > 0)
+            {     
+                EditForm newForm = new EditForm();
+                newForm.Show();
+            }
+            else
+            {
+                NullSelectionForm ns = new NullSelectionForm();
+                ns.Show();
+            }
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Remove from ListView
+            
+
+            if (listView2.SelectedIndices.Count > 0)
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(@"a2entries.xml");
+
+                XmlNodeList nodes = doc.GetElementsByTagName("entry");
+                XmlNode toDel;
+
+                for (int i = listView2.Items.Count - 1; i >= 0; i--)
+                {
+                    if (listView2.Items[i].Selected)
+                    {
+                        toDel = nodes[i];
+                        if (toDel != null)
+                        {
+                            toDel.ParentNode.RemoveChild(toDel);
+                        }
+                        listView2.Items[i].Remove();
+                    }
+                }
+
+                
+                
+                
+                // Find the values of listView2.Items[i] and compare to Node, delete correct Node
+
+
+
+                
+                doc.Save("a2entries.xml");
+            }
+            else
+            {
+                NullSelectionForm ns = new NullSelectionForm();
+                ns.Show();
+            }
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,5 +165,6 @@ namespace assignmetnt3q3
             e.Cancel = true;
             e.NewWidth = listView2.Columns[e.ColumnIndex].Width;
         }
+
     }
 }
