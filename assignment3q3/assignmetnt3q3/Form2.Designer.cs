@@ -30,19 +30,19 @@
         {
             this.firstNameBox = new System.Windows.Forms.TextBox();
             this.informationGrid = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.yearCombo = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lastNameBox = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.ageBox = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.genderCombo = new System.Windows.Forms.ComboBox();
             this.yearLabel = new System.Windows.Forms.Label();
-            this.yearCombo = new System.Windows.Forms.ComboBox();
             this.phoneLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.informationGrid.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,60 @@
             this.informationGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.informationGrid.Size = new System.Drawing.Size(344, 227);
             this.informationGrid.TabIndex = 0;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(175, 195);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(166, 29);
+            this.textBox3.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(3, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Address :";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(175, 163);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(166, 26);
+            this.textBox2.TabIndex = 12;
+            // 
+            // yearCombo
+            // 
+            this.yearCombo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.yearCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.yearCombo.FormattingEnabled = true;
+            this.yearCombo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.yearCombo.Location = new System.Drawing.Point(175, 131);
+            this.yearCombo.Name = "yearCombo";
+            this.yearCombo.Size = new System.Drawing.Size(109, 21);
+            this.yearCombo.TabIndex = 10;
             // 
             // textBox1
             // 
@@ -146,18 +200,6 @@
             this.ageBox.Text = "Age (years) :";
             this.ageBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 32);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Gender :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // genderCombo
             // 
             this.genderCombo.Dock = System.Windows.Forms.DockStyle.Left;
@@ -183,27 +225,6 @@
             this.yearLabel.Text = "University Year :";
             this.yearLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // yearCombo
-            // 
-            this.yearCombo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.yearCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.yearCombo.FormattingEnabled = true;
-            this.yearCombo.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.yearCombo.Location = new System.Drawing.Point(175, 131);
-            this.yearCombo.Name = "yearCombo";
-            this.yearCombo.Size = new System.Drawing.Size(109, 21);
-            this.yearCombo.TabIndex = 10;
-            // 
             // phoneLabel
             // 
             this.phoneLabel.AutoSize = true;
@@ -217,38 +238,17 @@
             this.phoneLabel.Text = "Phone Number :";
             this.phoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(175, 163);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 26);
-            this.textBox2.TabIndex = 12;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(3, 192);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Address :";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(175, 195);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 29);
-            this.textBox3.TabIndex = 14;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 32);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Gender :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // newContact
             // 
