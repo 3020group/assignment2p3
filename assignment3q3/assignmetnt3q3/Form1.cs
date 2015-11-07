@@ -10,11 +10,58 @@ using System.Windows.Forms;
 
 namespace assignmetnt3q3
 {
-    public partial class Form1 : Form
+    public partial class mainView : Form
     {
-        public Form1()
+        public mainView()
         {
             InitializeComponent();
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitTool_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void deleteTool_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editTool_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutTool_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //the new client button
+        private void button1_Click(object sender, EventArgs e)
+        {
+            newContact newForm = new newContact();
+            newForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
