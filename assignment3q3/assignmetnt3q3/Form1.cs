@@ -58,10 +58,5 @@ namespace assignmetnt3q3
         {
 
         }
-
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
